@@ -210,82 +210,83 @@
 
     <!-- latest trips -->
     <section class="latest-trips py-20 bg-emerald-50">
-        <div class="lg:w-[70%] md:w-[90%] w-[95%] mx-auto overflow-hidden px-8 bg-emerald-50">
+        <div class="lg:w-[70%] md:w-[90%] w-[95%] mx-auto">
             <div class="top-head text-left">
                 <!-- <p class="bg-emerald-50 px-3 py-1 text-sm rounded-full text-emerald-400 inline-block">Explore</p> -->
                 <h2 class="text-gray-dark uppercase font-bold lg:text-5xl md:text-4xl text-3xl my-4">More to explore</h2>
                 <p class="text-gray-500 font-rubik font-light text-md leading-7 lg:w-8/12 w-full">"In the end, we only regret the chances we didn’t take". Once the Travel bug bites there is no known antidote, and I know that I shall be happily infected until the end of my life.</p>
             </div>
-            <!-- Slider main container -->
-            <div class="swiper overflow-show mt-10">
-                <!-- Additional required wrapper -->
-                <div class="swiper-wrapper">
-                    <!-- Slides -->
-                    <div class="swiper-slide">
-                        <div class="slide-main bg-white rounded-xl">
-                            <img src="/images/golden-temple.jpeg" alt="golden-temple" class="w-full h-[275px] rounded-b-none rounded-xl">
-                            <div class="bottom-details px-4 py-6">
-                                <h4 class="text-gray-dark uppercase font-bold text-2xl mb-3 hover:text-emerald-400 cursor-pointer">Golden Template</h4>
-                                <p class="text-gray-500 text-sm leading-6 two-line-truncate">One of the most popular hill stations in Himachal, Manali offers the most magnificent views of the Pir Panjal and the Dhauladhar ranges covered with snow for most parts of the year.</p> 
+            <div class="slider relative">
+                <!-- Slider main container -->
+                <div class="swiper mt-10">
+                    <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper">
+                        <!-- Slides -->
+                        <div class="swiper-slide">
+                            <div class="slide-main bg-white rounded-xl">
+                                <img src="/images/golden-temple.jpeg" alt="golden-temple" class="w-full h-[275px] rounded-b-none rounded-xl">
+                                <div class="bottom-details px-4 py-6">
+                                    <h4 class="text-gray-dark uppercase font-bold text-2xl mb-3 hover:text-emerald-400 cursor-pointer">Golden Template</h4>
+                                    <p class="text-gray-500 text-sm leading-6 two-line-truncate">One of the most popular hill stations in Himachal, Manali offers the most magnificent views of the Pir Panjal and the Dhauladhar ranges covered with snow for most parts of the year.</p> 
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="slide-main bg-white rounded-xl">
-                            <img src="/images/kapaleeshwarar.jpeg" alt="kapaleeshwarar" class="w-full h-[275px] rounded-b-none rounded-xl">
-                            <div class="bottom-details px-4 py-6">
-                                <h4 class="text-gray-dark uppercase font-bold text-2xl mb-3 hover:text-emerald-400 cursor-pointer">Kapaleeshwarar</h4>
-                                <p class="text-gray-500 text-sm leading-6 two-line-truncate">One of the most popular hill stations in Himachal, Manali offers the most magnificent views of the Pir Panjal and the Dhauladhar ranges covered with snow for most parts of the year.</p> 
+                        <div class="swiper-slide">
+                            <div class="slide-main bg-white rounded-xl">
+                                <img src="/images/kapaleeshwarar.jpeg" alt="kapaleeshwarar" class="w-full h-[275px] rounded-b-none rounded-xl">
+                                <div class="bottom-details px-4 py-6">
+                                    <h4 class="text-gray-dark uppercase font-bold text-2xl mb-3 hover:text-emerald-400 cursor-pointer">Kapaleeshwarar</h4>
+                                    <p class="text-gray-500 text-sm leading-6 two-line-truncate">One of the most popular hill stations in Himachal, Manali offers the most magnificent views of the Pir Panjal and the Dhauladhar ranges covered with snow for most parts of the year.</p> 
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="slide-main bg-white rounded-xl">
-                            <img src="/images/kerala.jpeg" alt="kerala" class="w-full h-[275px] rounded-b-none rounded-xl">
-                            <div class="bottom-details px-4 py-6">
-                                <h4 class="text-gray-dark uppercase font-bold text-2xl mb-3 hover:text-emerald-400 cursor-pointer">Kerala</h4>
-                                <p class="text-gray-500 text-sm leading-6 two-line-truncate">One of the most popular hill stations in Himachal, Manali offers the most magnificent views of the Pir Panjal and the Dhauladhar ranges covered with snow for most parts of the year.</p> 
+                        <div class="swiper-slide">
+                            <div class="slide-main bg-white rounded-xl">
+                                <img src="/images/kerala.jpeg" alt="kerala" class="w-full h-[275px] rounded-b-none rounded-xl">
+                                <div class="bottom-details px-4 py-6">
+                                    <h4 class="text-gray-dark uppercase font-bold text-2xl mb-3 hover:text-emerald-400 cursor-pointer">Kerala</h4>
+                                    <p class="text-gray-500 text-sm leading-6 two-line-truncate">One of the most popular hill stations in Himachal, Manali offers the most magnificent views of the Pir Panjal and the Dhauladhar ranges covered with snow for most parts of the year.</p> 
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="slide-main bg-white rounded-xl">
-                            <img src="/images/golden-temple.jpeg" alt="golden-temple" class="w-full h-[275px] rounded-b-none rounded-xl">
-                            <div class="bottom-details px-4 py-6">
-                                <h4 class="text-gray-dark uppercase font-bold text-2xl mb-3 hover:text-emerald-400 cursor-pointer">Golden Template</h4>
-                                <p class="text-gray-500 text-sm leading-6 two-line-truncate">One of the most popular hill stations in Himachal, Manali offers the most magnificent views of the Pir Panjal and the Dhauladhar ranges covered with snow for most parts of the year.</p> 
+                        <div class="swiper-slide">
+                            <div class="slide-main bg-white rounded-xl">
+                                <img src="/images/golden-temple.jpeg" alt="golden-temple" class="w-full h-[275px] rounded-b-none rounded-xl">
+                                <div class="bottom-details px-4 py-6">
+                                    <h4 class="text-gray-dark uppercase font-bold text-2xl mb-3 hover:text-emerald-400 cursor-pointer">Golden Template</h4>
+                                    <p class="text-gray-500 text-sm leading-6 two-line-truncate">One of the most popular hill stations in Himachal, Manali offers the most magnificent views of the Pir Panjal and the Dhauladhar ranges covered with snow for most parts of the year.</p> 
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="slide-main bg-white rounded-xl">
-                            <img src="/images/kapaleeshwarar.jpeg" alt="kapaleeshwarar" class="w-full h-[275px] rounded-b-none rounded-xl">
-                            <div class="bottom-details px-4 py-6">
-                                <h4 class="text-gray-dark uppercase font-bold text-2xl mb-3 hover:text-emerald-400 cursor-pointer">Kapaleeshwarar</h4>
-                                <p class="text-gray-500 text-sm leading-6 two-line-truncate">One of the most popular hill stations in Himachal, Manali offers the most magnificent views of the Pir Panjal and the Dhauladhar ranges covered with snow for most parts of the year.</p> 
+                        <div class="swiper-slide">
+                            <div class="slide-main bg-white rounded-xl">
+                                <img src="/images/kapaleeshwarar.jpeg" alt="kapaleeshwarar" class="w-full h-[275px] rounded-b-none rounded-xl">
+                                <div class="bottom-details px-4 py-6">
+                                    <h4 class="text-gray-dark uppercase font-bold text-2xl mb-3 hover:text-emerald-400 cursor-pointer">Kapaleeshwarar</h4>
+                                    <p class="text-gray-500 text-sm leading-6 two-line-truncate">One of the most popular hill stations in Himachal, Manali offers the most magnificent views of the Pir Panjal and the Dhauladhar ranges covered with snow for most parts of the year.</p> 
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="slide-main bg-white rounded-xl">
-                            <img src="/images/kerala.jpeg" alt="kerala" class="w-full h-[275px] rounded-b-none rounded-xl">
-                            <div class="bottom-details px-4 py-6">
-                                <h4 class="text-gray-dark uppercase font-bold text-2xl mb-3 hover:text-emerald-400 cursor-pointer">Kerala</h4>
-                                <p class="text-gray-500 text-sm leading-6 two-line-truncate">One of the most popular hill stations in Himachal, Manali offers the most magnificent views of the Pir Panjal and the Dhauladhar ranges covered with snow for most parts of the year.</p> 
+                        <div class="swiper-slide">
+                            <div class="slide-main bg-white rounded-xl">
+                                <img src="/images/kerala.jpeg" alt="kerala" class="w-full h-[275px] rounded-b-none rounded-xl">
+                                <div class="bottom-details px-4 py-6">
+                                    <h4 class="text-gray-dark uppercase font-bold text-2xl mb-3 hover:text-emerald-400 cursor-pointer">Kerala</h4>
+                                    <p class="text-gray-500 text-sm leading-6 two-line-truncate">One of the most popular hill stations in Himachal, Manali offers the most magnificent views of the Pir Panjal and the Dhauladhar ranges covered with snow for most parts of the year.</p> 
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-
                 <!-- If we need navigation buttons -->
-                <div class="navigations">
-                    <div class="next-slide p-3 bg-white rounded-full absolute right-[-25px] top-1/2 z-30 mt-[-20px] cursor-pointer hover:bg-emerald-400 group">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-5 h-5 fill-gray-800 group-hover:fill-white">
+                <div class="navigations flex gap-2 justify-center items-center absolute right-0 top-[-60px] z-20">
+                    <div class="prev-slide p-3 bg-white rounded-full cursor-pointer hover:bg-emerald-400 group shadow-md">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-5 h-5 fill-gray-800 group-hover:fill-white rotate-[-180deg]">
                             <path fill-rule="evenodd" d="M2 10a.75.75 0 01.75-.75h12.59l-2.1-1.95a.75.75 0 111.02-1.1l3.5 3.25a.75.75 0 010 1.1l-3.5 3.25a.75.75 0 11-1.02-1.1l2.1-1.95H2.75A.75.75 0 012 10z" clip-rule="evenodd" />
                         </svg>
                     </div>
-                    <div class="prev-slide p-3 bg-white rounded-full absolute left-[-25px] top-1/2 z-30 mt-[-20px] cursor-pointer hover:bg-emerald-400 group">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-5 h-5 fill-gray-800 group-hover:fill-white rotate-[-180deg]">
+                    <div class="next-slide p-3 bg-white rounded-full cursor-pointer hover:bg-emerald-400 group shadow-md">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-5 h-5 fill-gray-800 group-hover:fill-white">
                             <path fill-rule="evenodd" d="M2 10a.75.75 0 01.75-.75h12.59l-2.1-1.95a.75.75 0 111.02-1.1l3.5 3.25a.75.75 0 010 1.1l-3.5 3.25a.75.75 0 11-1.02-1.1l2.1-1.95H2.75A.75.75 0 012 10z" clip-rule="evenodd" />
                         </svg>
                     </div>
