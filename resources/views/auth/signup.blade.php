@@ -1,26 +1,53 @@
 @extends('layouts.auth')
+@section('meta_title', 'Sign Up')
 
 @section('content')
 
-<div class="auth py-20 flex items-center justify-center backdrop-blur-[20px]">
-        <div class="sm:min-w-[330px] max-w-[330px]">
-            <div class="text-center mb-4">
-                <svg height="48" aria-hidden="true" viewBox="0 0 16 16" version="1.1" width="48" data-view-component="true" class="mx-auto" fill="white">
-                    <path fill-rule="evenodd" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"></path>
-                </svg>
-                <h1 class="text-[25px] tracking-wide text-slate-400 font-light mt-5">Sign up to GitHub</h1>
-                <p class="text-gray-500 text-xs my-3">Enter your details while signing up, it will create your new GitHub account.</p>
+<div class="auth flex items-start justify-between bg-white">
+    <div class="md:w-6/12 lg:w-4/12 w-full min-h-screen pt-28 bg-white">
+        <div class="text-center mb-4">
+            <a href="/" class="inline-flex items-center">
+                <img src="/images/favicon.png" alt="logo" class="max-w-[50px]">
+                <span class="font-medium text-gray-800 text-2xl drop-shadow-xl font-monteserrat">TravelBliss</span>
+            </a>
+            <!-- <h1 class="text-2xl text-gray-dark font-bold mt-5">Sign up to TravelBliss</h1> -->
+        </div>
+        <form action="#" method="POST" class=" pt-3 px-20">
+            <div class="grid lg:grid-cols-2 grid-cols-1 gap-5 mb-3">
+                <div class="form-group">
+                    <input type="text" name="name" class="w-full border border-gray-200 py-2.5 px-3 text-md focus:outline-none focus:ring-0 text-gray-500" placeholder="Enter Name...">
+                </div>
+                <div class="form-group">
+                    <input type="text" name="phone" class="w-full border border-gray-200 py-2.5 px-3 text-md focus:outline-none focus:ring-0 text-gray-500" placeholder="Enter Phone...">
+                </div>
             </div>
-            <div class="p-4 rounded bg-white/5 border border-white/10 mt-3 text-center">
-                <p class="text-slate-300 text-sm">Already have an account? <a href='/login' class="text-blue-500"> Sign in →</a></p>
+            <div class="form-group mb-3">
+                <input type="email" name="email" class="w-full border border-gray-200 py-2.5 px-3 text-md focus:outline-none focus:ring-0 text-gray-500" placeholder="Enter Email...">
             </div>
-            <div class="p-4 rounded bg-white/5 border border-white/10 mt-3 text-center">
-                <a href="{{ route('github.login') }}" class="text-slate-300 text-sm">Sign Up with <span class="text-blue-500">GitHub →</span></a>
+            <div class="form-group mb-3">
+                <input type="text" name="password" class="w-full border border-gray-200 py-2.5 px-3 text-md focus:outline-none focus:ring-0 text-gray-500" placeholder="Enter Password...">
             </div>
-            <div class="p-4 rounded bg-white/5 border border-white/10 mt-3 text-center">
-                <p class="text-slate-300 text-sm">Don't have an GitHub account? <br> <a href='https://github.com/signup?ref_cta=Sign+up&ref_loc=header+logged+out&ref_page=%2F&source=header-home' target="blank" class="text-blue-500"> Sign up to GitHub →</a></p>
+            <div class="form-group mb-3">
+                <input type="text" name="password_confirmation" class="w-full border border-gray-200 py-2.5 px-3 text-md focus:outline-none focus:ring-0 text-gray-500" placeholder="Enter Password Confirmation...">
             </div>
+            <!-- submit btn -->
+            <div class="form-group">
+                <button type="submit" class="w-full bg-emerald-400 text-white px-5 py-2 mt-4 block border border-transparent hover:border-emerald-400"><span>Sign Up</span></button>
+            </div>
+        </form>
+        <div class="py-2 rounded bg-white/5 border border-white/10 mt-6 text-center">
+            <p class="text-gray-500 font-rubik font-light text-md leading-7">Already have an account? <a href='/login' class="text-blue-500"> Sign in</a></p>
+        </div>
+        <p class="text-center text-gray-500 font-rubik font-light text-2xl leading-7">or</p>
+        <div class="py-2 rounded bg-white/5 border border-white/10 mt-3 text-center">
+            <a href="{{ route('google.login') }}" class="text-slate-300 text-sm">
+                <img src="/images/google-signin.png" alt="google" class="max-w-[170px] mx-auto">
+            </span></a>
         </div>
     </div>
+    <div class="md:w-6/12 lg:w-8/12 w-full min-h-screen">
+        <img src="/images/cover-1.jpeg" alt="cover" class="w-full h-full  min-h-screen">
+    </div>
+</div>
 
 @endsection

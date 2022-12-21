@@ -23,15 +23,17 @@ use App\Http\Controllers\Api\UserController;
 // Frontend routes
 require __DIR__.'/frontend/frontend.php';
 
-// other routes
+// Backend routes
+require __DIR__.'/backend/backend.php';
 
+// other routes
 Route::controller(AuthController::class)->group(function (){
     Route::get('/login', 'LoginPage')->middleware('guest')->name('login');
     Route::get('/signup', 'SignupPage')->middleware('guest')->name('signup');
     Route::post('register', 'register')->name('register.post');
     Route::post('login', 'login')->name('login.post');
-    Route::get('logout', 'logout');
-    Route::get('auth/github', 'gitRedirect')->name('github.login');
-    Route::get('auth/github/callback', 'gitCallback');
+    Route::get('logout', 'logout')->name('logout');
+    Route::get('auth/google', 'googleRedirect')->name('google.login');
+    Route::get('auth/google/callback', 'googleCallback');
 });
 

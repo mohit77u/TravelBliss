@@ -79,34 +79,37 @@ class AuthController extends Controller
         return redirect('/' .strtoLower($user->username) . '/home');
     }
 
-    // to redirect to github login page
-    public function gitRedirect()
+    // to redirect to google login page
+    public function googleRedirect()
     {
-        return Socialite::driver('github')->redirect();
+        return Socialite::driver('google')->redirect();
     }
-       
-    // get the callback to store dtails and login user
-    public function gitCallback()
-    {
-        $user = Socialite::driver('github')->user();
 
+     // get the callback to store dtails and login user
+     public function googleCallback()
+     {
+        $user = Socialite::driver('google')->user();
+ 
         $user = User::updateOrCreate([
-            'github_id' => $user->id,
+            'auth_app_id' => $user->id,
         ], [
-            'name'                  => $user->getName() ? $user->getName() : $user->getNickname(),
-            'username'              => $user->getNickname(),
+            'name'                  => $user->getName() ?? $user->getNickname(),
+            'username'              => $user->getNickname() ?? null,
             'email'                 => $user->getEmail(),
             'password'              => Hash::make('password'),
-            'github_id'             => $user->getId(),
-            'auth_type'             => 'github',
+            'auth_app_id'           => $user->getId(),
+            'auth_type'             => 'google',
+            'email_verified_at'     => now(),
         ]);
-
+ 
         // make user to auth user
         Auth::login($user);
+
+        $user->assignRole('user');
     
         // redirect to home page
         return redirect('/');
-    }
+     }
 
     // forgot password
     public function logout()

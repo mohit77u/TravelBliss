@@ -6,17 +6,32 @@
         <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon">
 
         <title>@yield('meta_title') | TravelBliss</title>
-        @vite('resources/sass/app.scss')
+        @vite('resources/assets/sass/app.scss')
 
     </head>
-    <body class="bg-dark-primary">
+    <body>
+
+        <!-- include header -->
+        @include('partials.header')
 
         <!-- main content -->
         @yield('content')
 
+        <!-- include footer -->
+        @include('partials.footer')
+
         <!-- toast -->
         @include('toast.toast')
 
-        @vite('resources/js/app.js')
+        <!-- scripts -->
+        <!-- optional script -->
+        @stack('before-scripts')
+
+        <!-- main scripts -->
+        @vite('resources/assets/js/app.js')
+
+        <!-- optional script -->
+        @stack('after-scripts')
+
     </body>
 </html>

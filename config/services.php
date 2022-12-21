@@ -30,11 +30,10 @@ return [
         'secret' => env('AWS_SECRET_ACCESS_KEY'),
         'region' => env('AWS_DEFAULT_REGION', 'us-east-1'),
     ],
-
-    'github' => [
-        'client_id'     => env('VITE_GITHUB_CLIENT_ID'),
-        'client_secret' => env('VITE_GITHUB_CLIENT_SECRET'),
-        'redirect'      => env('VITE_GITHUB_CLIENT_CALLBACK'),
+    'google' => [
+        'client_id'     => env('VITE_GOOGLE_CLIENT_ID'),
+        'client_secret' => env('VITE_GOOGLE_CLIENT_SECRET'),
+        'redirect'      => env('VITE_GOOGLE_CLIENT_CALLBACK'),
     ],
 
 ];

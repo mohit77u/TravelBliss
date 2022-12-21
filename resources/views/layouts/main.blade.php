@@ -6,7 +6,7 @@
         <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon">
 
         <title>@yield('meta_title') | TravelBliss</title>
-        @vite('resources/sass/app.scss')
+        @vite('resources/assets/sass/app.scss')
 
     </head>
     <body>
@@ -28,7 +28,7 @@
         @stack('before-scripts')
 
         <!-- main scripts -->
-        @vite('resources/js/app.js')
+        @vite('resources/assets/js/app.js')
 
         <!-- optional script -->
         @stack('after-scripts')
