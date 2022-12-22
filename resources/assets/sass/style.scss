@@ -1,5 +1,6 @@
 // Variables
 @import './_variables';
+// @import '../libs/summernote/summernote-lite.scss' ;
 
 *{
     margin: 0;
@@ -51,4 +52,20 @@ h1,h2,h3,h4,h5,h6{
 :disabled {
     cursor: default;
     opacity: 0.5;
+}
+
+.custom-dropdown{
+    &.show{
+        .arrow{
+            transform: rotate(-180deg);
+        }
+    }
+}
+
+.active{
+    background: $emrald;
+    color: white;
+    svg{
+        color: white;
+    }
 }

@@ -226,7 +226,7 @@
                             <div class="slide-main bg-white rounded-xl shadow-lg">
                                 <img src="/images/golden-temple.jpeg" alt="golden-temple" class="w-full h-[230px] rounded-b-none rounded-xl">
                                 <div class="bottom-details px-4 py-6">
-                                    <h4 class="text-gray-dark uppercase font-bold text-xl mb-3 hover:text-emerald-400 cursor-pointer">Golden Template</h4>
+                                    <h4 class="text-gray-dark uppercase font-bold text-xl mb-3 hover:text-emerald-400 cursor-pointer">Golden Temple</h4>
                                     <p class="text-gray-500 font-light tracking-wide text-sm leading-6 two-line-truncate">One of the most popular hill stations in Himachal, Manali offers the most magnificent views of the Pir Panjal and the Dhauladhar ranges covered with snow for most parts of the year.</p> 
                                 </div>
                                 <div class="heart absolute top-3 right-3 z-30 bg-emerald-400 p-1.5 cursor-pointer hover:bg-white group rounded-md">
@@ -268,7 +268,7 @@
                             <div class="slide-main bg-white rounded-xl shadow-lg">
                                 <img src="/images/golden-temple.jpeg" alt="golden-temple" class="w-full h-[230px] rounded-b-none rounded-xl">
                                 <div class="bottom-details px-4 py-6">
-                                    <h4 class="text-gray-dark uppercase font-bold text-xl mb-3 hover:text-emerald-400 cursor-pointer">Golden Template</h4>
+                                    <h4 class="text-gray-dark uppercase font-bold text-xl mb-3 hover:text-emerald-400 cursor-pointer">Golden Temple</h4>
                                     <p class="text-gray-500 font-light tracking-wide text-sm leading-6 two-line-truncate">One of the most popular hill stations in Himachal, Manali offers the most magnificent views of the Pir Panjal and the Dhauladhar ranges covered with snow for most parts of the year.</p> 
                                 </div>
                                 <div class="heart absolute top-3 right-3 z-30 bg-emerald-400 p-1.5 cursor-pointer hover:bg-white group rounded-md">
@@ -379,7 +379,7 @@
                             <div class="slide-main bg-white rounded-xl shadow-lg">
                                 <img src="/images/golden-temple.jpeg" alt="golden-temple" class="w-full h-[230px] rounded-b-none rounded-xl">
                                 <div class="bottom-details px-4 py-6">
-                                    <h4 class="text-gray-dark uppercase font-bold text-xl mb-3 hover:text-emerald-400 cursor-pointer">Golden Template</h4>
+                                    <h4 class="text-gray-dark uppercase font-bold text-xl mb-3 hover:text-emerald-400 cursor-pointer">Golden Temple</h4>
                                     <p class="text-gray-500 font-light tracking-wide text-sm leading-6 two-line-truncate">One of the most popular hill stations in Himachal, Manali offers the most magnificent views of the Pir Panjal and the Dhauladhar ranges covered with snow for most parts of the year.</p> 
                                 </div>
                                 <div class="heart absolute top-3 right-3 z-30 bg-emerald-400 p-1.5 cursor-pointer hover:bg-white group rounded-md">
@@ -421,7 +421,7 @@
                             <div class="slide-main bg-white rounded-xl shadow-lg">
                                 <img src="/images/golden-temple.jpeg" alt="golden-temple" class="w-full h-[230px] rounded-b-none rounded-xl">
                                 <div class="bottom-details px-4 py-6">
-                                    <h4 class="text-gray-dark uppercase font-bold text-xl mb-3 hover:text-emerald-400 cursor-pointer">Golden Template</h4>
+                                    <h4 class="text-gray-dark uppercase font-bold text-xl mb-3 hover:text-emerald-400 cursor-pointer">Golden Temple</h4>
                                     <p class="text-gray-500 font-light tracking-wide text-sm leading-6 two-line-truncate">One of the most popular hill stations in Himachal, Manali offers the most magnificent views of the Pir Panjal and the Dhauladhar ranges covered with snow for most parts of the year.</p> 
                                 </div>
                                 <div class="heart absolute top-3 right-3 z-30 bg-emerald-400 p-1.5 cursor-pointer hover:bg-white group rounded-md">
@@ -533,8 +533,9 @@
                             <div class="slide-main bg-white rounded-xl shadow-lg">
                                 <img src="/images/golden-temple.jpeg" alt="golden-temple" class="w-full h-[250px] rounded-b-none rounded-xl">
                                 <div class="bottom-details px-4 py-6">
-                                    <h4 class="text-gray-dark uppercase font-bold text-xl mb-3 hover:text-emerald-400 cursor-pointer">Golden Template</h4>
-                                    <p class="text-gray-500 font-light tracking-wide text-sm leading-6 two-line-truncate">One of the most popular hill stations in Himachal, Manali offers the most magnificent views of the Pir Panjal and the Dhauladhar ranges covered with snow for most parts of the year.</p> 
+                                    <h4 class="text-gray-dark uppercase font-bold text-xl mb-3 hover:text-emerald-400 cursor-pointer">Golden Temple</h4>
+                                    <p class="text-gray-500 font-light tracking-wide text-sm leading-6 three-line-truncate">One of the most popular hill stations in Himachal, Manali offers the most magnificent views of the Pir Panjal and the Dhauladhar ranges covered with snow for most parts of the year.</p> 
+                                    <a href="#" class="text-blue-400 font-light tracking-wide text-sm underline underline-offset-2 mt-4 inline-block">Read More</a> 
                                 </div>
                             </div>
                         </div>
@@ -543,7 +544,8 @@
                                 <img src="/images/kapaleeshwarar.jpeg" alt="kapaleeshwarar" class="w-full h-[250px] rounded-b-none rounded-xl">
                                 <div class="bottom-details px-4 py-6">
                                     <h4 class="text-gray-dark uppercase font-bold text-xl mb-3 hover:text-emerald-400 cursor-pointer">Kapaleeshwarar</h4>
-                                    <p class="text-gray-500 font-light tracking-wide text-sm leading-6 two-line-truncate">One of the most popular hill stations in Himachal, Manali offers the most magnificent views of the Pir Panjal and the Dhauladhar ranges covered with snow for most parts of the year.</p> 
+                                    <p class="text-gray-500 font-light tracking-wide text-sm leading-6 three-line-truncate">One of the most popular hill stations in Himachal, Manali offers the most magnificent views of the Pir Panjal and the Dhauladhar ranges covered with snow for most parts of the year.</p> 
+                                    <a href="#" class="text-blue-400 font-light tracking-wide text-sm underline underline-offset-2 mt-4 inline-block">Read More</a> 
                                 </div>
                             </div>
                         </div>
@@ -552,7 +554,8 @@
                                 <img src="/images/kerala.jpeg" alt="kerala" class="w-full h-[250px] rounded-b-none rounded-xl">
                                 <div class="bottom-details px-4 py-6">
                                     <h4 class="text-gray-dark uppercase font-bold text-xl mb-3 hover:text-emerald-400 cursor-pointer">Kerala</h4>
-                                    <p class="text-gray-500 font-light tracking-wide text-sm leading-6 two-line-truncate">One of the most popular hill stations in Himachal, Manali offers the most magnificent views of the Pir Panjal and the Dhauladhar ranges covered with snow for most parts of the year.</p> 
+                                    <p class="text-gray-500 font-light tracking-wide text-sm leading-6 three-line-truncate">One of the most popular hill stations in Himachal, Manali offers the most magnificent views of the Pir Panjal and the Dhauladhar ranges covered with snow for most parts of the year.</p> 
+                                    <a href="#" class="text-blue-400 font-light tracking-wide text-sm underline underline-offset-2 mt-4 inline-block">Read More</a> 
                                 </div>
                             </div>
                         </div>
@@ -560,8 +563,9 @@
                             <div class="slide-main bg-white rounded-xl shadow-lg">
                                 <img src="/images/golden-temple.jpeg" alt="golden-temple" class="w-full h-[250px] rounded-b-none rounded-xl">
                                 <div class="bottom-details px-4 py-6">
-                                    <h4 class="text-gray-dark uppercase font-bold text-xl mb-3 hover:text-emerald-400 cursor-pointer">Golden Template</h4>
-                                    <p class="text-gray-500 font-light tracking-wide text-sm leading-6 two-line-truncate">One of the most popular hill stations in Himachal, Manali offers the most magnificent views of the Pir Panjal and the Dhauladhar ranges covered with snow for most parts of the year.</p> 
+                                    <h4 class="text-gray-dark uppercase font-bold text-xl mb-3 hover:text-emerald-400 cursor-pointer">Golden Temple</h4>
+                                    <p class="text-gray-500 font-light tracking-wide text-sm leading-6 three-line-truncate">One of the most popular hill stations in Himachal, Manali offers the most magnificent views of the Pir Panjal and the Dhauladhar ranges covered with snow for most parts of the year.</p> 
+                                    <a href="#" class="text-blue-400 font-light tracking-wide text-sm underline underline-offset-2 mt-4 inline-block">Read More</a> 
                                 </div>
                             </div>
                         </div>
@@ -570,7 +574,8 @@
                                 <img src="/images/kapaleeshwarar.jpeg" alt="kapaleeshwarar" class="w-full h-[250px] rounded-b-none rounded-xl">
                                 <div class="bottom-details px-4 py-6">
                                     <h4 class="text-gray-dark uppercase font-bold text-xl mb-3 hover:text-emerald-400 cursor-pointer">Kapaleeshwarar</h4>
-                                    <p class="text-gray-500 font-light tracking-wide text-sm leading-6 two-line-truncate">One of the most popular hill stations in Himachal, Manali offers the most magnificent views of the Pir Panjal and the Dhauladhar ranges covered with snow for most parts of the year.</p> 
+                                    <p class="text-gray-500 font-light tracking-wide text-sm leading-6 three-line-truncate">One of the most popular hill stations in Himachal, Manali offers the most magnificent views of the Pir Panjal and the Dhauladhar ranges covered with snow for most parts of the year.</p> 
+                                    <a href="#" class="text-blue-400 font-light tracking-wide text-sm underline underline-offset-2 mt-4 inline-block">Read More</a> 
                                 </div>
                             </div>
                         </div>
@@ -579,7 +584,8 @@
                                 <img src="/images/kerala.jpeg" alt="kerala" class="w-full h-[250px] rounded-b-none rounded-xl">
                                 <div class="bottom-details px-4 py-6">
                                     <h4 class="text-gray-dark uppercase font-bold text-xl mb-3 hover:text-emerald-400 cursor-pointer">Kerala</h4>
-                                    <p class="text-gray-500 font-light tracking-wide text-sm leading-6 two-line-truncate">One of the most popular hill stations in Himachal, Manali offers the most magnificent views of the Pir Panjal and the Dhauladhar ranges covered with snow for most parts of the year.</p> 
+                                    <p class="text-gray-500 font-light tracking-wide text-sm leading-6 three-line-truncate">One of the most popular hill stations in Himachal, Manali offers the most magnificent views of the Pir Panjal and the Dhauladhar ranges covered with snow for most parts of the year.</p> 
+                                    <a href="#" class="text-blue-400 font-light tracking-wide text-sm underline underline-offset-2 mt-4 inline-block">Read More</a> 
                                 </div>
                             </div>
                         </div>

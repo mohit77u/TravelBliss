@@ -76,7 +76,7 @@ class AuthController extends Controller
 
         $user = Auth::user();
 
-        return redirect('/' .strtoLower($user->username) . '/home');
+        return redirect('/');
     }
 
     // to redirect to google login page
