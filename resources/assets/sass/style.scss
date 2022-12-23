@@ -1,6 +1,7 @@
 // Variables
 @import './_variables';
 // @import '../libs/summernote/summernote-lite.scss' ;
+@import './editor.scss';
 
 *{
     margin: 0;
@@ -14,6 +15,15 @@ body {
 }
 h1,h2,h3,h4,h5,h6{
     font-family: 'Montserrat', sans-serif;
+}
+
+.active-option{
+    background: $emrald;
+    color: white;
+    &:hover{
+        background: $emrald !important;
+        color: white !important;
+    }
 }
 
 .font-cursive{
@@ -39,7 +49,7 @@ h1,h2,h3,h4,h5,h6{
 ::-webkit-scrollbar {
     width: 8px;
     height: 6px;
-    background: rgba(128, 128, 128, 0.2);
+    background: rgba(19, 0, 36, 0.2);
     padding: 5px;
     border: 1px solid rgba(255,255,255,0.1);
 }
@@ -54,6 +64,7 @@ h1,h2,h3,h4,h5,h6{
     opacity: 0.5;
 }
 
+
 .custom-dropdown{
     &.show{
         .arrow{
@@ -67,5 +78,43 @@ h1,h2,h3,h4,h5,h6{
     color: white;
     svg{
         color: white;
+    }
+}
+
+#admin{
+    .sidebar, .admin-content{
+        transition: 0.4s ease-in-out;
+    }
+}
+.collapse-sidebar{
+    .sidebar{
+        overflow-x: visible;
+        width: 80px;
+        .logo-link{
+            justify-content: center;
+            span{
+                display: none;
+            }
+        }
+        .main-sidebar-menu{
+            h3{
+                display: none;
+            }
+            svg{
+                margin-right: 0;
+            }
+            .title{
+                display: none;
+            }
+            .dropdown-toggle-icon{
+                display: none;
+            }
+            a,button{
+                justify-content: center;
+            }
+        }
+    }
+    .admin-content{
+        margin-left: 80px;
     }
 }

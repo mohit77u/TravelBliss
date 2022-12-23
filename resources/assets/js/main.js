@@ -3,6 +3,8 @@ import './bootstrap';
 // custom select
 import './partials/customSelect'
 import './partials/customDrpdown'
+import Trix from "trix"
+
 
 // import 'flowbite'
 $(function(){
@@ -63,5 +65,14 @@ $(function(){
             content_style: 'body { font-family: Rubik,sans-serif; font-size:16px; } .tox-edit-area { background-color: rgb(236, 253 ,245); }'
         });
     }
+
+    if($('.collapse-btn').length){
+        $(document).on('click', '.collapse-btn', function(){
+            $('#admin').toggleClass('collapse-sidebar')
+        })
+    }
+
+    var element = document.querySelector("trix-editor")
+    element.editor
 
 })

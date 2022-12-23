@@ -717,7 +717,7 @@ return [
         ],
         [
             "state"     => "Sikkim",
-            "code"      => "AP",
+            "code"      => "SK",
             "cities"    => [
                 "East Sikkim",
                 "North Sikkim",
@@ -941,5 +941,15 @@ return [
                 "Uttar Dinajpur (North Dinajpur)"
             ]
         ]
+    ],
+    'destination_category' => [
+        'hangout'               => 'Hangout',
+        'forests'               => 'Forests',
+        'beach_areas'           => 'Beach areas',
+        'natural_areas'         => 'Natural areas',
+        'mountain_areas'        => 'Mountain areas',
+        'winter_sport_areas'    => 'Winter sport areas',
+        'towns_and_cities'      => 'Towns and cities',
     ]
+
 ];

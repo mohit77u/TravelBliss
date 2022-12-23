@@ -1,4 +1,4 @@
-<form method="POST">
+<!-- <form > -->
     <!-- include fields -->
     @include('admin.destinations.fields')
-</form>
+<!-- </form> -->

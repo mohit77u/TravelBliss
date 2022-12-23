@@ -71,10 +71,16 @@ $(function(){
             var value = $(this).attr('data-value')
             var dropdownMenu = $(this).closest('.custom-dropdown-menu')
             var dropdown = dropdownMenu.parent('.custom-dropdown')
-            var input = dropdown.find('input')
-            input.attr('value', value)
+            var field = dropdown.find('.field')
+            console.log(field)
+            var option = '<option value="'+ value + '" selected>'+ text +'</option>'
+            field.append(option)
+            // field.val(value)
+            console.log(field.val())
             dropdown.find('.custom-dropdown-btn').find('span').text(text)
             dropdown.removeClass('show')
+            $('.dropdown-item').removeClass('active-option')
+            $(this).addClass('active-option')
             dropdownMenu.slideUp('fastest');
 
             // get city of state

@@ -6,6 +6,15 @@
     padding: 0;
 }
 
+.active-option{
+    background: $emrald;
+    color: white;
+    &:hover{
+        background: $emrald !important;
+        color: white !important;
+    }
+}
+
 body {
     // font-family: 'Poppins', sans-serif;
     font-family: 'Rubik', sans-serif;
@@ -38,7 +47,7 @@ h1,h2,h3,h4,h5,h6{
 ::-webkit-scrollbar {
     width: 8px;
     height: 6px;
-    background: rgba(128, 128, 128, 0.2);
+    background: rgba(19, 0, 36, 0.2);
     padding: 5px;
     border: 1px solid rgba(255,255,255,0.1);
 }

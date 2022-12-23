@@ -73,7 +73,7 @@
 											</p>
 										</a>
 									</div>
-									<a href="#" class="block text-blue-500 text-center font-medium py-2 border-t border-gray-100">See all bookings</a>
+									<a href="#" class="block text-blue-500 text-center font-medium py-2 border-t text-sm border-gray-100">See all bookings</a>
 								</div>
 							</li>
 							<li class="dropdown relative">
