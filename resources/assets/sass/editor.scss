@@ -71,8 +71,8 @@ trix-toolbar .trix-button:not(:first-child) {
 }
 
 trix-toolbar .trix-button.trix-active {
-    background: $lightBg;
-    color: black;
+    background: $emrald;
+    color: white;
 }
 
 trix-toolbar .trix-button:not(:disabled) {
@@ -364,7 +364,8 @@ trix-editor .trix-button:not(:first-child) {
 }
 
 trix-editor .trix-button.trix-active {
-    background: $lightBg;
+    background: $emrald;
+    color: white;
 }
 
 trix-editor .trix-button:not(:disabled) {
@@ -460,6 +461,23 @@ trix-editor .attachment__metadata .attachment__size {
     margin-left: 0.3em;
     padding-left: 0.6em;
 }
+
+.editor ul {
+    // list-style: decimal !important;
+    padding-left: 25px;
+    li{
+        list-style-type: disc !important;
+    }
+}
+
+.editor ol {
+    // list-style: decimal !important;
+    padding-left: 25px;
+    li{
+        list-style-type: decimal !important;
+    }
+}
+
 
 .trix-content [dir=rtl] blockquote,
 .trix-content blockquote[dir=rtl] {

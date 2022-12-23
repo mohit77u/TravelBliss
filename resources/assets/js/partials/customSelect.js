@@ -72,11 +72,7 @@ $(function(){
             var dropdownMenu = $(this).closest('.custom-dropdown-menu')
             var dropdown = dropdownMenu.parent('.custom-dropdown')
             var field = dropdown.find('.field')
-            console.log(field)
-            var option = '<option value="'+ value + '" selected>'+ text +'</option>'
-            field.append(option)
-            // field.val(value)
-            console.log(field.val())
+            field.attr('value', value)
             dropdown.find('.custom-dropdown-btn').find('span').text(text)
             dropdown.removeClass('show')
             $('.dropdown-item').removeClass('active-option')

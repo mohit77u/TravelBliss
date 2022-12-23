@@ -2,9 +2,10 @@
 
 namespace App\Http\Controllers\Api;
 
-use App\Http\Controllers\Controller;
-use Illuminate\Http\Request;
 use Illuminate\Support\Arr;
+use Illuminate\Support\Str;
+use Illuminate\Http\Request;
+use App\Http\Controllers\Controller;
 
 class ApiController extends Controller
 {
@@ -36,6 +37,28 @@ class ApiController extends Controller
             $cities = $state['cities'];
         }
         return $cities;
+    }
+
+    // image upload from editor
+    public function imageUploadFromEditor(Request $request)
+    {
+        $directory = '/uploads/editor/';
+        if(isset($request->file))
+        {
+            $image = $request->file;
+            $baseName = pathinfo($image->getClientOriginalName(), PATHINFO_FILENAME);
+            $extenison = $image->getClientOriginalExtension();
+            $baseName = Str::slug($baseName, '-');
+            $imageName = $baseName .'.'.$extenison;
+
+            $filePath = $directory . $imageName;
+
+            $image->move(public_path($directory),$imageName);
+
+            return $filePath;
+
+        }
+        exit;
     }
 
    

@@ -32,12 +32,12 @@ $(function(){
         $(document).on('click', '.add-row', function(){
             var featuresDiv = $('.destination-features').find('.features-form').first()
             var cloneFeatures = featuresDiv.clone();
-            console.log($('.features-form').length)
             if($('.features-form').length >= 1){
                 cloneFeatures.find('.remove-row').removeClass('hidden')
             } else {
                 cloneFeatures.find('.remove-row').addClass('hidden')
             }
+            cloneFeatures.find('input').val('')
             cloneFeatures.appendTo($('.destination-features'))
         })
 
@@ -53,26 +53,80 @@ $(function(){
         })
     }
 
-    if($('.editor').length){
-        tinymce.init({
-            selector: '.editor',
-            statusbar: false,
-            // skin: 'oxide-dark',
-            height: 450,
-            menubar: false,
-            plugins: 'preview autolink autosave code fullscreen link codesample insertdatetime advlist lists ',
-            toolbar: 'undo redo | bold italic underline | fontsize blocks | alignleft aligncenter alignright alignjustify |  numlist bullist | forecolor removeformat | fullscreen  | link anchor',
-            content_style: 'body { font-family: Rubik,sans-serif; font-size:16px; } .tox-edit-area { background-color: rgb(236, 253 ,245); }'
-        });
-    }
-
     if($('.collapse-btn').length){
         $(document).on('click', '.collapse-btn', function(){
             $('#admin').toggleClass('collapse-sidebar')
         })
     }
 
-    var element = document.querySelector("trix-editor")
-    element.editor
+    if($('.editor').length){
+        var element = document.querySelector("trix-editor")
+        element.editor
+
+        var HOST = "/api/v1/image-upload"
+
+        addEventListener("trix-attachment-add", function(event) {
+            if (event.attachment.file) {
+                uploadFileAttachment(event.attachment)
+            }
+            // var attachement = event.attachment.file
+            // console.log(attachement)
+            // for(let i=0; i<attachement.lenght; i++){
+            //     console.log(attachement.file)
+            // }
+        })
+
+        function uploadFileAttachment(attachment) {
+            uploadFile(attachment.file, setProgress, setAttributes)
+
+            function setProgress(progress) {
+                attachment.setUploadProgress(progress)
+            }
+
+            function setAttributes(attributes) {
+                attachment.setAttributes(attributes)
+            }
+        }
+
+        function uploadFile(file, progressCallback, successCallback) {
+            var key = createStorageKey(file)
+            var formData = createFormData(key, file)
+            var xhr = new XMLHttpRequest()
+
+            xhr.open("POST", HOST, true)
+
+            xhr.upload.addEventListener("progress", function(event) {
+                var progress = event.loaded / event.total * 100
+                progressCallback(progress)
+            })
+
+            xhr.addEventListener("load", function(event) {
+            if (xhr.status == 200) {
+                    var attributes = {
+                        url:  xhr.response,
+                        href: xhr.response
+                    }
+                    successCallback(attributes)
+                }
+            })
+
+            xhr.send(formData)
+        }
+
+        function createStorageKey(file) {
+            var date = new Date()
+            var day = date.toISOString().slice(0,10)
+            var name = date.getTime() + "-" + file.name
+            return [ "tmp", day, name ].join("/")
+        }
+
+        function createFormData(key, file) {
+            var data = new FormData()
+            data.append("key", key)
+            data.append("Content-Type", file.type)
+            data.append("file", file)
+            return data
+        }
+    }
 
 })
