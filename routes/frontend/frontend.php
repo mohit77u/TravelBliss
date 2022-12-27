@@ -10,6 +10,7 @@ Route::controller(FrontendController::class)->group(function(){
     Route::get('/', 'homePage')->name('home.get');
     Route::post('/search', 'searchResults')->name('search.post');
     Route::get('/destinations', 'destinationsPage')->name('destinations.get');
+    Route::get('/destinations/{id}/{slug}', 'singleDestinationsPage')->name('single.destination.get');
     Route::get('/gallery', 'galleryPage')->name('gallery.get');
     Route::get('/news', 'newsPage')->name('news.get');
     Route::get('/about', 'aboutPage')->name('about.get');

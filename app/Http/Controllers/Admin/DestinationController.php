@@ -2,9 +2,10 @@
 
 namespace App\Http\Controllers\Admin;
 
-use App\Http\Controllers\Controller;
-use Illuminate\Contracts\View\View;
+use App\Models\Destination;
+use Illuminate\Support\Str;
 use Illuminate\Http\Request;
+use App\Http\Controllers\Controller;
 
 class DestinationController extends Controller
 {
@@ -36,7 +37,57 @@ class DestinationController extends Controller
      */
     public function store(Request $request)
     {
-        dd($request->all());
+        $input = $request->validate([
+            'name'              => 'required',
+            'state'             => 'required',
+            // 'city'           => 'required',
+            'description'       => 'required',
+            'content'           => 'required',
+            'category'          => 'required',
+            'featured_image'    => 'required',
+        ]);
+
+        $destinationFilePath = '/uploads/destinations/';
+
+        // featured image
+        if(isset($request->featured_image))
+        {
+            $image = $request->featured_image;
+            
+            $extension = $image->getClientOriginalExtension();
+            $baseName = pathinfo($image->getClientOriginalName(), PATHINFO_FILENAME);
+            $fileName = $baseName. '.' .$extension;
+
+            $image->move(public_path($destinationFilePath), $fileName);
+
+            $input['featured_image'] = $destinationFilePath.$fileName;;
+        }
+
+        // other images
+        if(isset($request->images))
+        {
+            $allImages = [];
+            $images = $request->images;
+            foreach($images as $key => $image)
+            {
+                $extension = $image->getClientOriginalExtension();
+                $baseName = pathinfo($image->getClientOriginalName(), PATHINFO_FILENAME);
+                $fileName = $baseName. '.' .$extension;
+
+                $image->move(public_path($destinationFilePath), $fileName);
+
+                $allImages[$key] = $destinationFilePath.$fileName;
+            }
+
+            $input['images'] = json_encode($allImages);
+        }
+
+        $input['slug'] = Str::slug($request->name, '-');
+
+        Destination::create($input);
+
+        return back()->with('success', 'Successfully created destination.');
+        
     }
 
     /**

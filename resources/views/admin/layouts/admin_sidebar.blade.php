@@ -61,7 +61,7 @@
                         <span class="title">Dashboard</span>
                     </a>
                 </li>
-                <li class="dropdown main-item">
+                <!-- <li class="dropdown main-item">
                     <button class="group text-[14px] flex w-full justify-between items-center menu whitespace-nowrap capitalize py-3 hover:bg-emerald-400 hover:text-white px-4 text-slate-300 font-monteserrat font-medium" type="button" data-dropdown-toggle="gallery">
                         <span class="flex items-center">
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5 text-slate-300 group-hover:text-white mr-3">
@@ -80,19 +80,25 @@
                             <li><a class="sub-menu block w-full text-[13px] font-monteserrat capitalize py-2 px-12 text-slate-400 font-medium" href="#">All Gallery</a></li>
                         </ul>
                     </div>
-                </li>
+                </li> -->
                 <li class="main-item">
                     <a href="{{ route('admin.destinations.create')}}" class="group text-[14px] whitespace-nowrap capitalize py-3 px-4 flex w-full items-center hover:bg-emerald-400 hover:text-white text-slate-300 font-monteserrat font-medium @if(request()->is('admin/destination*')) active @endif">
-                        <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 122.88 122.88" class="w-5 h-5 fill-slate-300 group-hover:fill-white mr-3" xml:space="preserve"><g>
-                            <path class="st0" d="M16.63,105.75c0.01-4.03,2.3-7.97,6.03-12.38L1.09,79.73c-1.36-0.59-1.33-1.42-0.54-2.4l4.57-3.9
-                                c0.83-0.51,1.71-0.73,2.66-0.47l26.62,4.5l22.18-24.02L4.8,18.41c-1.31-0.77-1.42-1.64-0.07-2.65l7.47-5.96l67.5,18.97L99.64,7.45
-                                c6.69-5.79,13.19-8.38,18.18-7.15c2.75,0.68,3.72,1.5,4.57,4.08c1.65,5.06-0.91,11.86-6.96,18.86L94.11,43.18l18.97,67.5
-                                l-5.96,7.47c-1.01,1.34-1.88,1.23-2.65-0.07L69.43,66.31L45.41,88.48l4.5,26.62c0.26,0.94,0.05,1.82-0.47,2.66l-3.9,4.57
-                                c-0.97,0.79-1.81,0.82-2.4-0.54l-13.64-21.57c-4.43,3.74-8.37,6.03-12.42,6.03C16.71,106.24,16.63,106.11,16.63,105.75
-                                L16.63,105.75z"/>
+                        <svg class="w-5 h-5 fill-slate-100 group-hover:fill-white mr-3" version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 490.201 490.201" xmlns:xlink="http://www.w3.org/1999/xlink" enable-background="new 0 0 490.201 490.201">
+                            <g>
+                                <path d="m467.999,22.057c-46.8-41.9-98.1-14.6-112.5,4.2l-34.4,40.6-280.3-31.3c-2.5-0.5-6.9,0.2-8.3,2.1l-29.2,29.2c-4.6,4.2-4.7,13.3 2.1,16.7l204.2,106.2-64.6,76-110.5-15.6c-3.1,0-6.2,1-8.3,3.1l-18.8,18.7c-5.3,5.6-3.8,13.4 2.1,16.7l88.6,43.7c-2.1,15.6 3.1,32.3 15.6,44.8 11.5,12.5 28.1,17.7 44.8,15.6l43.8,88.5c3.7,8.8 12.5,6.3 16.7,2.1l18.8-18.7c2.1-2.1 3.1-5.2 3.1-8.3l-15.6-110.4 76-64.5 105.3,203.1c4,6.8 11.1,7.4 16.7,2.1l29.2-29.2c2.1-2.1 3.1-5.2 3.1-8.3l-31.3-280.2 39.5-35.4c18.7-12.9 46.4-68.1 4.2-111.5zm-17.8,93.7l-43.8,39.6c-2.1,3.2-3.1,6.3-3.1,9.4l31.3,280.2-15.6,15.6-105.2-201c-4-6.4-11.4-6.2-16.8-2.2l-90.7,76c-2.1,2.1-3.1,6.3-3.1,9.4l15.6,110.4-5.2,5.2-40.6-82.3c-2.1-4.2-7.3-6.2-12.5-5.2-11.4,3.2-25,0-33.3-8.3-9.3-9.3-12.5-21.8-8.3-33.3 2.1-5.2-1-10.4-5.2-12.5l-82.3-40.6 5.2-5.2 110.4,15.6c3.1,1.1 7.3,0 9.4-3.1l76.1-90.6c2.1-2.1 3.9-11.1-3.1-15.6l-201.1-105.2 14.6-19.8 280.1,31.2c4.2,1.1 7.3-1 9.4-3.1l39.6-43.7c8.4-11.4 46.8-34.2 81.3-2.1 35,32.5 6.8,76-3.1,81.2z"/>
                             </g>
                         </svg>
                         <span class="title">Destinations</span>
+                    </a>
+                </li>
+                <li class="main-item">
+                    <a href="{{ route('admin.destinations.create')}}" class="group text-[14px] whitespace-nowrap capitalize py-3 px-4 flex w-full items-center hover:bg-emerald-400 hover:text-white text-slate-300 font-monteserrat font-medium @if(request()->is('admin/packages*')) active @endif">
+                        <svg class="w-5 h-5 fill-slate-300 group-hover:fill-white mr-3" version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 485.32 485.32" xmlns:xlink="http://www.w3.org/1999/xlink" enable-background="new 0 0 485.32 485.32">
+                            <g>
+                                <path d="m480.76,79.05c-0.6-0.2-235-78.3-235-78.3-2.1-1-4.1-1-6.2,0l-231.9,76.3c-5.8,2.4-7.2,7.4-7.2,10.3v313.3c0,5.2 3.1,9.3 7.2,10.3l229,73.2c3.5,1.3 7.3,1.8 12.1,0l228.9-73.2c4.1-2.1 7.2-6.2 7.2-10.3v-313.3c5.68434e-14-3.1-1-6.2-4.1-8.3zm-238.1-56.7l198.9,63.9-75.1,24.1-196-64.5 72.2-23.5zm-10.3,438l-211.3-67v-291.4l211.3,67.6v290.8zm10.3-310.2l-198.9-62.8 93.7-30.6 195.3,64.5-90.1,28.9zm10.3,310.2v-291.6l105.1-33.3v32.3l20.6-8.8v-30l85.5-27v290.4h0.1l-211.3,68z"/>
+                            </g>
+                        </svg>
+                        <span class="title">Packages</span>
                     </a>
                 </li>
                 <li class="main-item">
@@ -111,6 +117,7 @@
                         <span class="title">Bookings</span>
                     </a>
                 </li>
+               
                 <li class="main-item">
                     <a href="" class="group text-[14px] whitespace-nowrap capitalize py-3 px-4 flex w-full items-center hover:bg-emerald-400 hover:text-white text-slate-300 font-monteserrat font-medium @if(request()->route()->named('admin.dashboard')) active @endif">
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5 text-slate-300 group-hover:text-white mr-3">

@@ -30,6 +30,12 @@ return [
 
     'disks' => [
 
+        'invoice' => [
+            'driver' => 'local',
+            'root' => public_path('invoices'),
+            'throw' => false,
+        ],
+
         'local' => [
             'driver' => 'local',
             'root' => storage_path('app'),

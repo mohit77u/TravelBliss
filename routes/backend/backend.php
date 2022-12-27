@@ -1,9 +1,10 @@
 <?php
 
+use Illuminate\Support\Facades\Route;
+use App\Http\Livewire\CreateDestination;
+use App\Http\Controllers\Admin\InvoiceController;
 use App\Http\Controllers\Admin\DashboardController;
 use App\Http\Controllers\Admin\DestinationController;
-use App\Http\Livewire\CreateDestination;
-use Illuminate\Support\Facades\Route;
 
 
 // all backend routed here
@@ -20,6 +21,21 @@ Route::group(['prefix' => 'admin', 'namespace' => 'App\Http\Controllers\Admin', 
             'DestinationController',
             ['names' => 'admin.destinations']
         );
+    });
+
+    // invoice
+    Route::controller(InvoiceController::class)->group(function(){
+        Route::get(
+            'invoice',
+            'makeInvoice',
+            ['names' => 'admin.invoice']
+        );
+
+        // Route::get(
+        //     'send-sms',
+        //     'sendSMS',
+        //     ['names' => 'admin.send-sms']
+        // );
     });
 
 });

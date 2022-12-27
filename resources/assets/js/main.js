@@ -1,9 +1,11 @@
 import './bootstrap';
 
-// custom select
+// custom select and dropdown
 import './partials/customSelect'
 import './partials/customDrpdown'
-import Trix from "trix"
+
+// import trix editor js
+import Trix from 'trix'
 
 
 // import 'flowbite'
@@ -127,6 +129,19 @@ $(function(){
             data.append("file", file)
             return data
         }
+    }
+
+    if($('.toast').length){
+        $(document).on('click', '.close-toast-btn',function(){
+            $(this).parent('.toast').addClass('hidden')
+        })
+        hideToast();
+    }
+
+    function hideToast(){
+        setTimeout(() => {
+            $('.toast').addClass('hidden')
+        }, 4000)
     }
 
 })

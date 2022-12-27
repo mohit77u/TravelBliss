@@ -6,7 +6,7 @@ import 'swiper/css/pagination';
 // explore slider
 var swiper = new Swiper(".explore", {
     modules: [Navigation],
-    loop: true,
+    loop: false,
     // delay: 4500,
     // autoplay: {
     //     delay: 4500,
@@ -35,7 +35,7 @@ var swiper = new Swiper(".explore", {
   // discover slider
   var swiper = new Swiper(".discover", {
     modules: [Navigation],
-    loop: true,
+    loop: false,
     // delay: 4500,
     // autoplay: {
     //     delay: 4500,
@@ -85,6 +85,30 @@ var swiper = new Swiper(".news", {
     },
     1024: {
       slidesPerView: 3,
+      spaceBetween: 50,
+    },
+  },
+});
+
+// news slider
+var swiper = new Swiper(".image-slider", {
+  modules: [Navigation],
+  loop: false,
+  navigation: {
+      nextEl: ".next-slide",
+      prevEl: ".prev-slide",
+  },
+  breakpoints: {
+    480: {
+      slidesPerView: 1,
+      spaceBetween: 20,
+    },
+    768: {
+      slidesPerView: 1,
+      spaceBetween: 40,
+    },
+    1024: {
+      slidesPerView: 1,
       spaceBetween: 50,
     },
   },

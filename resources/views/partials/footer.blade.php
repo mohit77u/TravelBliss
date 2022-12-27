@@ -1,5 +1,5 @@
 <footer class="footer bg-dark-blue-gray">
-    <div class="lg:w-[70%] md:w-[90%] w-[95%] mx-auto"> 
+    <div class="lg:w-80% xl:w-[70%] md:w-[90%] w-[95%] mx-auto"> 
         <div class="footer-top pt-20 pb-20 border-b border-gray-800 flex flex-wrap">
             <div class="footer-column lg:w-4/12 md:6/12 w-full">
                 <a href="/" class="inline-flex items-center">
@@ -36,6 +36,7 @@
                         <li><a href="#" class="text-gray-400 hover:text-gray-100 font-light inline-block text-md py-1">Home</a></li>
                         <li><a href="#" class="text-gray-400 hover:text-gray-100 font-light inline-block text-md py-1">About</a></li>
                         <li><a href="{{ route('destinations.get') }}" class="text-gray-400 hover:text-gray-100 font-light inline-block text-md py-1">Destinations</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-gray-100 font-light inline-block text-md py-1">Packages</a></li>
                         <li><a href="#" class="text-gray-400 hover:text-gray-100 font-light inline-block text-md py-1">Gallery</a></li>
                         <li><a href="#" class="text-gray-400 hover:text-gray-100 font-light inline-block text-md py-1">News</a></li>
                         <li><a href="#" class="text-gray-400 hover:text-gray-100 font-light inline-block text-md py-1">Contact us</a></li>

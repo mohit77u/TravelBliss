@@ -1,4 +1,4 @@
-<div class="destionation grid xl:grid-cols-7 grid-cols-1 gap-5">
+<div class="destionation grid xl:grid-cols-7 grid-cols-1 gap-5" wire:model.debounce.365ms="content" wire:ignore>
     <div class="bg-white p-6 rounded xl:col-span-5">
         <div class="form">
             <!-- top basic information -->
@@ -8,9 +8,6 @@
                 <div class="form-group">
                     <label class="block text-slate-800 mb-1.5">Destination Name</label>
                     <input type="text" id="name" name="name" class="w-full bg-emerald-50/25 text-slate-800 py-2.5 px-2 border border-gray-200 focus:ring-0 focus:border-emerald-400 focus:outline-none" placeholder="Name">
-                    @error('name')
-                        <p class="error text-red-500 text-sm my-2">{{ $message }}</p>
-                    @enderror
                 </div>
                 <!-- state -->
                 <div class="form-group">
@@ -31,9 +28,6 @@
                             </div>
                         </div>
                     </div>
-                    @error('state')
-                        <p class="error text-red-500 text-sm my-2">{{ $message }}</p>
-                    @enderror
                 </div>
                 <!-- cities -->
                 <div class="form-group">
@@ -54,9 +48,6 @@
                             </div>
                         </div>
                     </div>
-                    @error('city')
-                        <p class="error text-red-500 text-sm my-2">{{ $message }}</p>
-                    @enderror
                 </div>
             </div>
 
@@ -64,20 +55,15 @@
             <div class="form-group mt-4 mb-3">
                 <label class="block text-slate-800 mb-1.5">Description</label>
                 <textarea rows="6" class="w-full bg-emerald-50/25 text-slate-800 py-2 px-2 border border-gray-200 focus:ring-0 focus:border-emerald-400 focus:outline-none" placeholder="Description" name="description"></textarea>
-                @error('description')
-                    <p class="error text-red-500 text-sm my-2">{{ $message }}</p>
-                @enderror
             </div>
 
 
             <!-- content -->
             <div class="form-group mb-3">
                 <label class="block text-slate-800 mb-1.5">Content</label>
+                <!-- <textarea name="content" rows="6" class="w-full bg-emerald-50/25 text-slate-800 py-2 px-2 border border-gray-200 focus:ring-0 focus:border-emerald-400 focus:outline-none" placeholder="Content"></textarea> -->
                 <input id="content" type="hidden" name="content">
                 <trix-editor input="content" class="bg-emerald-50/25 editor"></trix-editor>
-                @error('content')
-                    <p class="error text-red-500 text-sm my-2">{{ $message }}</p>
-                @enderror
             </div>
 
             <!-- featured image -->
@@ -92,9 +78,6 @@
                         <img src="" alt="preview" class="hidden">
                     </div>
                 </div>
-                @error('featured_image')
-                    <p class="error text-red-500 text-sm my-2">{{ $message }}</p>
-                @enderror
             </div>
 
             <!-- images -->
@@ -109,9 +92,6 @@
                         <img src="" alt="preview" class="hidden">
                     </div>
                 </div>
-                @error('images')
-                    <p class="error text-red-500 text-sm my-2">{{ $message }}</p>
-                @enderror
             </div>
         </div>
     </div>
@@ -121,7 +101,7 @@
         <div class="form-group mb-3">
             <div class="custom-dropdown relative">
                 <label class="block text-slate-800 mb-1.5">Category</label>
-                <input type="text" class="category-field field hidden" name="category">
+                <input type="text" class="category-field hidden" name="category">
                 <button type="button" class="relative custom-dropdown-btn flex items-center bg-emerald-50/25 justify-between w-full border border-gray-200 py-2.5 px-3 text-md text-slate-800 focus:ring-0 focus:border-emerald-400 focus:outline-none">
                     <span class="truncate max-w-[150px] text-left block">Select Category</span>
                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="arrow absolute right-2 top-3 transition-all duration-300 fill-gray-500 w-4 h-4" viewBox="0 0 16 16">
@@ -139,12 +119,9 @@
                     </div>
                 </div>
             </div>
-            @error('category')
-                <p class="error text-red-500 text-sm my-2">{{ $message }}</p>
-            @enderror
         </div>
        
-        <!-- features
+        <!-- features -->
         <div class="form-group mb-3 destination-features">
             <div class="flex items-center justify-between">
                 <h4 class="my-3 text-slate-500 text-md pb-1 inline-block">Features</h4>
@@ -162,7 +139,7 @@
                     </svg>
                 </button>
             </div>
-        </div> -->
+        </div>
         <!-- submit btns -->
         <div class="form-group mt-12 flex flex-col sm:flex-row gap-2 items-center justify-end">
             <a href="#" class="bg-red-500 text-center text-white text-sm px-8 py-3 block sm:w-auto w-full">Cancel</a>
@@ -172,5 +149,5 @@
 </div>
 
 @push('before-scripts')
-
+    <!-- <script src="https://cdn.tiny.cloud/1/v34ikzswzxl2j62l23ywmczucwejytrxjjj1c0luhiqv1pvr/tinymce/6/tinymce.min.js" referrerpolicy="origin"></script> -->
 @endpush
