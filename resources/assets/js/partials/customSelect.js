@@ -4,29 +4,8 @@ $(function(){
 
         // get state and city on page load from api
         $(document).ready(function() {
-            getState();
+            // getState();
         });
-
-        // // get state
-        function getState(){
-            axios.get('/api/v1/states')
-            .then(function (response) {
-                const data = response.data
-                var li = $("#state").find('.dropdown-item').last()
-                for(var i = 0; i < data.length; i++){
-                    var clone = li.clone();
-                    clone.attr('data-value', data[i].code)
-                    clone.text(data[i].state)
-                    $('#state ul').append(clone)
-                }
-                // get city for first state on load page
-                getCity(data[0].code)
-            }).catch(function (error) {
-                console.error(error);
-            });
-
-             
-        }
         
         // get city
         function getCity(state){

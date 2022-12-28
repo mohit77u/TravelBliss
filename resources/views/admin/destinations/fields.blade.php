@@ -27,6 +27,9 @@
                             <div class="max-h-[250px] overflow-y-auto">
                                 <ul>
                                     <li class="dropdown-item block py-2 bg-white border-b border-gray-200 px-3 text-slate-800 cursor-pointer hover:bg-emerald-50/25" data-value="">Select State</li>
+                                    @foreach ($states as $state)
+                                        <li class="dropdown-item block py-2 bg-white border-b border-gray-200 px-3 text-gray-500 cursor-pointer hover:bg-green-50" data-value="{{ $state['code'] }}">{{ $state['state'] }}</li>
+                                    @endforeach
                                 </ul>
                             </div>
                         </div>

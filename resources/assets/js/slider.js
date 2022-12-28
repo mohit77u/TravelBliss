@@ -1,17 +1,14 @@
-import Swiper, { Navigation, Pagination } from 'swiper';
+import Swiper, { Navigation, Autoplay } from 'swiper';
 import 'swiper/css';
-import 'swiper/css/navigation';
-import 'swiper/css/pagination';
 
 // explore slider
 var swiper = new Swiper(".explore", {
-    modules: [Navigation],
-    loop: false,
-    // delay: 4500,
-    // autoplay: {
-    //     delay: 4500,
-    //     disableOnInteraction: false,
-    // },
+    modules: [Navigation, Autoplay],
+    loop: true,
+    autoplay: {
+      delay: 4500,
+      disableOnInteraction: false,
+    },
     navigation: {
         nextEl: ".next-slide",
         prevEl: ".prev-slide",
@@ -33,14 +30,13 @@ var swiper = new Swiper(".explore", {
   });
 
   // discover slider
-  var swiper = new Swiper(".discover", {
-    modules: [Navigation],
-    loop: false,
-    // delay: 4500,
-    // autoplay: {
-    //     delay: 4500,
-    //     disableOnInteraction: false,
-    // },
+  var swiper = new Swiper(".packages", {
+    modules: [Navigation, Autoplay],
+    loop: true,
+    autoplay: {
+        delay: 4500,
+        disableOnInteraction: false,
+    },
     navigation: {
         nextEl: ".next-slide",
         prevEl: ".prev-slide",
@@ -55,7 +51,7 @@ var swiper = new Swiper(".explore", {
         spaceBetween: 40,
       },
       1024: {
-        slidesPerView: 4,
+        slidesPerView: 3,
         spaceBetween: 50,
       },
     },
@@ -63,13 +59,12 @@ var swiper = new Swiper(".explore", {
 
 // news slider
 var swiper = new Swiper(".news", {
-  modules: [Navigation],
-  loop: false,
-  // delay: 4500,
-  // autoplay: {
-  //     delay: 4500,
-  //     disableOnInteraction: false,
-  // },
+  modules: [Navigation, Autoplay],
+    loop: true,
+    autoplay: {
+      delay: 4500,
+      disableOnInteraction: false,
+  },
   navigation: {
       nextEl: ".next-slide",
       prevEl: ".prev-slide",
@@ -92,8 +87,9 @@ var swiper = new Swiper(".news", {
 
 // news slider
 var swiper = new Swiper(".image-slider", {
-  modules: [Navigation],
-  loop: false,
+  modules: [Navigation, Autoplay],
+  loop: true,
+  autoplay: true,
   navigation: {
       nextEl: ".next-slide",
       prevEl: ".prev-slide",

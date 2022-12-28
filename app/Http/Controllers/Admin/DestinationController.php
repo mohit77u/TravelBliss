@@ -26,7 +26,8 @@ class DestinationController extends Controller
      */
     public function create()
     {
-        return view('admin.destinations.create');
+        $states = config('access.states');
+        return view('admin.destinations.create', compact('states'));
     }
 
     /**

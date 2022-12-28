@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use Share;
 use App\Models\Destination;
 use Illuminate\Http\Request;
 
@@ -11,9 +12,10 @@ class FrontendController extends Controller
     public function homePage()
     {
         $destinations = Destination::latest()->get();
+        $states = config('access.states');
         $popularDestinations = Destination::where('popular' ,'yes')->latest()->get();
 
-        return view('frontend.pages.home', compact('destinations', 'popularDestinations'));
+        return view('frontend.pages.home', compact('states', 'destinations', 'popularDestinations'));
     }
 
     // galleryPage
@@ -36,17 +38,19 @@ class FrontendController extends Controller
 
 
     // destinationsPage
-    public function singleDestinationsPage($id, $slug)
+    public function singleDestinationsPage(Request $request , $id, $slug)
     {
         $destination = Destination::where('id', $id)->where('slug', $slug)->first();
         $destination->images = json_decode($destination->images);
         $states = config('access.states');
+        $category = config('access.destination_category');
         $state = array_filter($states, function($data) use ($destination){
             return $data['code'] == $destination->state;
         });
         $state = array_values($state);
         $state = $state[0];
-        return view('frontend.pages.destination.single', compact('destination', 'state'));
+
+        return view('frontend.pages.destination.single', compact('destination', 'state', 'category'));
     }
 
     // aboutPage
