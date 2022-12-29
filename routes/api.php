@@ -19,3 +19,4 @@ use Illuminate\Support\Facades\Route;
 Route::get('/v1/states', [ApiController::class, 'getStates']);
 Route::get('/v1/{state}/cities', [ApiController::class, 'getCitiesByStateCode']);
 Route::post('/v1/image-upload', [ApiController::class, 'imageUploadFromEditor']);
+Route::get('/v1/destinations', [ApiController::class, 'destinations']);

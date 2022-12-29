@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers\Api;
 
+use App\Models\Destination;
 use Illuminate\Support\Arr;
 use Illuminate\Support\Str;
 use Illuminate\Http\Request;
@@ -59,6 +60,15 @@ class ApiController extends Controller
 
         }
         exit;
+    }
+
+    public function destinations()
+    {
+        $destinations = Destination::latest()->get();
+
+        return response([
+            'destinations' => $destinations
+        ], 200);
     }
 
    
